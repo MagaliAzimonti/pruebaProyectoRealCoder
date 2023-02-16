@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ESTILOS HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+nav {
+    z-index: 100000000;
+    height: 109px;
+    width: 100%;
+    /* background: rgba(255, 255, 255, 1); */
+
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgba(28, 27, 31, 1);
+
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #000090;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    nav {
+        height: 109px;
+    }
+
+    .logo {
+        position: absolute;
+        width: 83px;
+        height: 60.61px;
+        top: 32px;
+        left: 16px;
+    }
+
+    .checkbtn {
+        display: inline-block;
+    }
+
+    nav ul {
+
+        z-index: 100000;
+        position: fixed;
+        width: 210px;
+        height: 352px;
+        top: 109px;
+        right: -100%;
+        /*  top:100px;
+        top: -150%; */
+        padding: 8px 0;
+        transition: all .5s;
+        background: linear-gradient(0deg, #F5F5F5, #F5F5F5), #FFFBFE;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    nav ul li a {
+
+        width: 190px;
+        line-height: 40px;
+        font-family: 'Poppins', sans-serif;
+        color: #1C1B1F;
+
+        letter-spacing: 0.5px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        background: none;
+        color: red;
+    }
+
+    #check:checked~ul {
+        /* top:109px; */
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbarIcons {
+        width: 24px;
+        height: 24px;
+        /* left: 332px; */
+        margin-top: 50px;
+    }
+}
+
+/* ESTILOS INDEX */
+
+
+.heroImageIndex {
+    background-image: url(../images/hero_image_index.png);
+    display: flex;
+    flex-direction: column;
+    height: 844px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .titleTextIndex {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}  */
+
+.heroImageIndex .titleTextIndex {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 75%;
+    color: #F5F5F5;
+}
+
+.heroImageIndex .titleTextIndex .firstTitleIndex {
+    font-size: 34px;
+    font-weight: 700;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+
+}
+
+.heroImageIndex .titleTextIndex .textIndex {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.heroImageIndex .btnIndexDiv {
+    position: relative;
+    height: 500%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnIndexDiv .btnOrderIndex {
+    height: 44px;
+    width: 143px;
+    padding: 0px;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-width: 0px;
+    background: #FFAA88;
+    border-radius: 100px;
+}
+
+.heroImageIndex .btnIndexDiv .btnOrderIndex a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.secondSectionindex {
+    padding-top:32px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FDF9F7;
+}
+
+.secondSectionindex .logoIndex {
+    width: 106.81px;
+    height: 78px;
+}
+
+.secondSectionindex .secondTitleIndex {
+    width: 358px;
+    height: 36px;
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionindex .iconGlutenFreeIndex {
+    background: url(../images/imagenGlutenFree.png);
+    margin-top:64px;
+    width: 60px;
+    height: 60px;
+    border-radius: 47px;
+}
+
+.secondSectionindex .textGlutenFreeIndex {
+    width: 127px;
+    height: 24px;
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionindex .iconCalidadIndex {
+    background: url(../images/icono_calidad_orange.png);
+    width: 65px;
+    height: 65px;
+    margin-top: 64px;
+}
+
+.secondSectionindex .textCalidadIndex {
+    width: 296px;
+    height: 24px;
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionindex .textSecondIndex {
+    width: 359px;
+    height: 96px;
+    margin-top:64px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionindex .circleIndex {
+    margin-top:33px;
+    background-image: url(../images/eclipse_orange_index.png);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* margin-top:33px; */
+}
+
+
+.secondSectionindex .circleIndex .btnMoreIndex {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 152px;
+    height: 44px;
+    background-color: rgba(255, 170, 136, 1);
+    border-radius: 100px;
+    border-width: 0px;
+    margin-top: 55px;
+    margin-bottom: 46px; 
+}
+
+
+.secondSectionindex .circleIndex .btnMoreIndex a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.thirdSectionIndex {
+    padding-top:32px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FDF9F7;
+}
+
+.thirdSectionIndex .thirdTitleIndex {
+    width: 358px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+/* .thirdSectionIndex .slider {
+    top:116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.thirdSectionIndex .slider .listOne {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 600%;
+    
+} */
+/* position: relative;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; */
+/* .thirdSectionIndex .slider {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.thirdSectionIndex .slider .listOne {
+    display: flex;
+    flex-direction: row;
+    width: 600%;
+    overflow: hidden;
+} */
+    /* overflow: hidden;
+    width: 100%;
+    z-index: 100;
+    padding-top: 116px; */
+
+    /* position: absolute;
+    
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 600%; */
+
+/* .thirdSectionIndex footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+} */
+.thirdSectionIndex footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.thirdSectionIndex footer .footerIcons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 17px;
+    padding-bottom: 37px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.thirdSectionIndex footer .footerTitle {
+    
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.iconFacebook {
+    background-image: url(../images/Icon_facebook.png);
+    width: 26px;
+    height: 26px;
+}
+
+.iconInstagram {
+    background-image: url(../images/Icon\ _instagram.png);
+    width: 26px;
+    height: 26px;
+}
+
+.iconWhatsapp {
+    background-image: url(../images/Icon_whatsapp.png);
+    width: 24px;
+    height: 24px;
+}
+
+@media (min-width: 391px) {
+    .rectangleCarouselOne {
+        display: none;
+    }
+
+    .rectangleCarouselTwo {
+        display: none;
+    }
+}
+
+/* ESTILOS ABOUT */
+/* .logoNavbarAbout {
+    width: 106.81px;
+    height: 78px;
+    top: 48px;
+    left: 141px;
+} */
+
+.firstSectionAbout {
+    background: #FDF9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}
+.firstSectionAbout .headerAbout {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.firstSectionAbout .headerAbout .navbarAbout {
+    
+    z-index: 100000000;
+    height: 140px;
+    width: 100%;
+    /* background: rgba(255, 255, 255, 1); */
+
+}
+
+.firstSectionAbout .headerAbout .navbarAbout .enlaceAbout {
+    top:48px;
+   margin-left: -41px;
+}
+/* .enlace {
+    
+    padding: 50px;
+} */
+
+.firstSectionAbout .headerAbout .navbarAbout .enlaceAbout .logoNavbarAbout {
+    width: 106.81px;
+    height: 78px;
+}
+
+.heroImageAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.diagonalDelAboutOne {
+    position: relative;
+        width: 917.48px;
+        height: 112.07px;
+        left: -206.11px;
+        top: 89px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+        border-radius: 26px;
+        transform: rotate(17.6deg);
+        color: #FFB3CE 36% #FFE3B3 36%;
+}
+
+/* display: flex;
+height: 844px;
+background-size: cover;
+background-position: center; */
+
+.imgPanUno {
+    padding:10px;
+    z-index: 400;
+}
+
+.divParAbout {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FDF9F7;
+    
+    margin-top: 48px;
+}
+
+.paragraphAbout {
+    width: 95%;
+    height: 399px;
+font-style: normal;
+ font-weight: 300;
+ font-size: 14px;
+ line-height: 21px;
+ color: #000000;
+}
+
+.secondSectionAbout {
+    padding-top:32px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FDF9F7;
+    overflow: hidden;
+}
+
+.secondSectionAbout .titleMision {
+    width: 82px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.secondSectionAbout .secondParagraphAbout {
+    margin-top: 32px;
+    width: 95%;
+    height: 63px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.heroImageAboutTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.diagonalDelAboutTwo {
+    position: relative;
+   margin-top: 50px;
+    width: 917.48px;
+        height: 112.07px;
+        
+        overflow: hidden;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+        border-radius: 26px;
+        transform: rotate(17.6deg);
+        color: #FFB3CE 36% #FFE3B3 36%;
+}
+
+.imgPanTwo {
+    padding:30px;
+    z-index: 400;
+    margin-top: -150px;
+} 
+
+.titleValores {
+    width: 95px;
+    height: 36px;
+    margin-top:48px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    text-align: center;
+}
+
+.listRow {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    margin-top:53px;
+}
+
+.listRow div h3 {
+    height: 21px;
+    top: 526px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+  
+.thirdParagraphAbout {
+    width: 95%;
+    height: 168px;
+    margin-top: 48px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.medialunaAbout {
+    background-image: url(../images/eclipse_orange_index.png);
+width: 100%;
+height: 50px;
+margin-top:18px;
+background-size: cover;
+position: relative;
+}
+
+@media (min-width: 395px) {
+    .diagonalDelAboutOne {
+        display: none;
+    }
+    .imgPanUno {
+        margin: 50px;
+    }
+
+    .diagonalDelAboutTwo {
+        display: none;
+    }
+    .imgPanTwo {
+        margin: 50px;
+
+    }
+}
